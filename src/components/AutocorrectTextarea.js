@@ -14,7 +14,6 @@ class AutocorrectTextarea extends React.Component {
     let keys = Object.keys(corrections)
     keys.map((key, _) => {
       if (inputArr.includes(key)){
-        console.log(inputArr.indexOf(key));
         inputArr[inputArr.indexOf(key)] = corrections[key]
       }
     })
